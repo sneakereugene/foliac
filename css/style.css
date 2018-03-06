@@ -1,0 +1,441 @@
+@import url(<link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">);
+@font-face {
+    font-family: 'John';
+  src: url('../fonts/slimjoe-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/slimjoe-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/slimjoe-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/slimjoe-webfont.ttf')  format('truetype'); /* Safari, Android, iOS */
+        font-weight: normal;
+        font-style: normal;
+}
+@font-face {
+    font-family: 'John';
+  src: url('../fonts/bigjohn-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/bigjohn-webfont.eot') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/bigjohn-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/bigjohn-webfo.ttf')  format('truetype'); /* Safari, Android, iOS */
+            font-weight: bold;
+            font-style: normal;
+ }
+.main_menu{
+	font-family: 'Lato';
+	font-weight: bold;
+	list-style: none;
+	padding-left: 0;
+}
+.main_menu li{
+	display: inline-block;
+	padding-left: 0;
+	font-family: 'Lato';
+	list-style: none;
+}
+.header_text{
+	font-family: "John", serif;
+}
+.container{
+	width: 1140px;
+	margin:0 auto;
+}
+.main_menu:hover{
+	text-decoration: underline;
+}
+.main_menu a{
+	color:#fff;
+	text-decoration: none;
+}
+.top_line{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main_menu li:after{
+	content: "/";
+	margin: 0 2em;
+	color: #626c74;
+}
+.header_text{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.header_text button{
+	background-color: transparent;
+	border: 2px solid #48bf72;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: .5em 2.5em;
+	color: #48bf72;
+	font-family: 'Lato', serif;
+	text-transform: uppercase;
+}
+.header_text button:hover{
+	color:green;
+	border-color: green;
+}
+.header_text button:focus{
+	outline: none;
+}
+.main_menu li:last-child:after{
+	content:"";
+}
+.header_text h1{
+	font-family: "John", serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.header_text h2{
+	font-family: "John", serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+/* filter */
+
+.filter{
+	list-style-type: none;
+	text-align: center;
+	padding-left: 0;
+}
+.filter li{
+	padding: 7px 11px 7px 11px;
+	background: #eaeaea;
+	border-radius: 3.5px;
+	display: inline-block;
+	padding: .5em 2em;
+}
+.filter a{
+	text-decoration: none;
+	color: #535e69;
+	font-family: 'Lato', serif;
+	font-weight: bold;
+}
+{
+	background: #48bf72;
+}
+.filter a:hover{
+	color: #535e69;
+}
+.filter li.active, .filter li:hover{
+	background: #48bf72;
+	color:#fff;
+}
+
+/* portfolio */
+.portfolio_item{
+	list-style: none;
+	padding-left: 0;
+	height: 870px;
+	position: relative;
+	margin-bottom: 100px;
+}
+.portfolio_item li{
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	border-radius: 11px;
+}
+.portfolio_item li:nth-child(odd){
+	width: 35%;
+}
+.portfolio_item li:nth-child(even){
+	width: calc(65% - 40px);
+	margin-left: 40px
+
+}
+.portfolio_item li:hover>a{
+	visibility: visible;
+}
+.portfolio_item a{
+	background-color: rgba(85, 191, 121,0.8);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	text-decoration: none;
+	visibility: hidden;
+}
+/* man */
+.man{
+	background: linear-gradient(rgba(60, 73, 85, 0.6),rgba(60, 73, 85, 0.6)),
+	           url("../img/men-computer.jpg");
+	    height: 650px;
+	    color: #fff;
+	    position: relative;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: cover;
+}
+
+.man .container{
+	height: 100%;
+}
+.bodytext {
+   margin-left: 45%;
+   padding: 0 90px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   height: 100%;
+}
+
+/* button */
+
+.bodytext button {
+   border: 2px solid #3c4955;
+   background-color: transparent;
+   border-radius: 3px;
+   font-family: 'Lato';
+   margin-top: 40px;
+   padding: .5em 2em;
+   text-transform: uppercase;
+   color: #3c4955;
+}
+
+.bodytext button:hover {
+   border: 2px solid #FFF;
+   color: #FFF;
+}
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+header{
+	background:linear-gradient(rgba(60, 73, 85, 0.6),rgba(60, 73, 85, 0.6)),
+				url("../img/computer.jpg");
+	height: 650px;
+	color:#fff;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button	display: inline-block;
+}
+
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+/*  */
+
+
+.cta h1{
+	color:#48bf72;
+	text-transform: uppercase;
+	font-family: "John", Arial, serif;
+	font-size: 26px;
+	text-align: center;
+}
+.cta form{
+	font-size: 14px;
+	width: 700px;
+	margin: 0 auto;
+	font-size: 0;
+}
+#name, #email{
+	width: calc(50% - 2.5em - 15px);
+	margin-bottom: 30px;
+}
+input, textarea{
+	font-size: 16px;
+	line-height: 2.5em;
+	border: 2px solid #3c4955;
+	padding: 0 0 0 1.5em;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	box-sizing: border-box;
+}
+textarea{
+	width: calc(100% - 2.5em)
+}
+input::placeholder, textarea::placeholder{
+	color:#c9c8c8;
+	font-weight: bold;
+}
+label{
+	display: inline-block;
+	width: 2.5em;
+	background-color: #3c4955;
+	color: #fff;
+	line-height: 2.5em;
+	border: 2px solid #3c4955;
+	text-align: center;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-size: 16px;
+	position: relative;
+box-sizing: border-box;
+}
+label:after{
+	content:"";
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid #3c4955;
+	position: absolute;
+	right: -9px;
+	top: calc(50% - 5px);
+
+}
+#name{
+	margin-right: 30px;
+}
+
+.mfc{
+	position: relative;
+	display: flex;
+	align-items: stretch;
+	margin-bottom: 30px;
+}
+.mfc label:after{
+	top: 1em;
+}
+input[type="submit"]{
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	background: #48bf72;
+}
+/* footer */
+footer{
+	background-color: #3c4955;
+	color: #fff;
+	margin-top: 30px;
+	padding: 50px 0;
+}
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+footer .right{
+	display: flex;
+	justify-content: space-between;
+}
+.hexagon {
+  position: relative;
+  width: 57px;
+  height: 32.91px;
+  background-color: #64C7CC;
+  margin: 16.45px 0;
+ margin-left: 20px;
+ font-size: 25px;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 28.5px solid transparent;
+  border-right: 28.5px solid transparent;
+}
+a{
+	color:#fff;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 16.45px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 16.45px solid #64C7CC;
+}
+.hexagon svg{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+/* twitter */
+.hexagon.twitter:after{
+	border-top: 16.45px solid #55acee;
+}
+.hexagon.twitter:before{
+	border-bottom: 16.45px solid #55acee;
+}
+.hexagon.twitter{
+	background-color: #55acee;
+}
+/* linked */
+.hexagon.linked:after{
+	border-top: 16.45px solid #0976b4;
+}
+.hexagon.linked:before{
+	border-bottom: 16.45px solid #0976b4;
+}
+.hexagon.linked{
+	background-color: #0976b4;
+}
+/* behance */
+.hexagon.behance:after{
+	border-top: 16.45px solid #1769ff;
+}
+.hexagon.behance:before{
+	border-bottom: 16.45px solid #1769ff;
+}
+.hexagon.behance{
+	background-color: #1769ff;
+}
+/* dribbble */
+.hexagon.dribbble:after{
+	border-top: 16.45px solid  #ea4c89;
+}
+.hexagon.dribbble:before{
+	border-bottom: 16.45px solid  #ea4c89;
+}
+.hexagon.dribbble{
+	background-color:  #ea4c89;
+}
